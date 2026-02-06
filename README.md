@@ -1,43 +1,110 @@
-# Qué hay configurado en esta plantilla
+<!-- markdownlint-disable MD033 MD041 -->
+<img alt="UCU" src="https://www.ucu.edu.uy/plantillas/images/logo_ucu.svg"
+width="150"/>
+<!-- markdownlint-enable MD033 MD041 -->
 
-1. Un proyecto de biblioteca (creado con [`dotnet new classlib --name Library`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore22)) en la carpeta `src\Library`
-2. Un proyecto de aplicación de consola (creado con [`dotnet new console --name Program`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore22)) en la carpeta `src\Program`
-3. Un proyecto de prueba en [NUnit](https://nunit.org/) (creado con [`dotnet new nunit --name LibraryTests`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore22)) en la carpeta `test\LibraryTests`
-4. Un proyecto de [Doxygen](https://www.doxygen.nl/index.html) para generación de sitio web de documentación en la carpeta `docs`
-5. Análisis estático con [Roslyn analyzers](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview) en los proyectos de biblioteca y de aplicación
-6. Análisis de estilo con [StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/README.md) en los proyectos de biblioteca y de aplicación
-7. Una solución `ProjectTemplate.sln` que referencia todos los proyectos de C# y facilita la compilación con [`dotnet build`](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build).
-8. Tareas preconfiguradas para compilar y ejecutar los proyectos, ejecutar las pruebas, y generar documentación desde VSCode en la carpeta `.vscode`
-9. Análisis de cobertura de los casos de prueba mediante []() que aparece en los márgenes con el complemento de VS Code [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters).
-10. Ejecución automática de compilación y prueba mediante [GitHub Actions](https://docs.github.com/en/actions) configuradas en el repositorio al hacer [push](https://github.com/git-guides/git-push) o [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests).
+# Universidad Católica del Uruguay
 
-Vean este 🎥 [video](https://web.microsoftstream.com/video/55c6a06c-07dc-4f95-a96d-768f198c9044) que explica el funcionamiento de la plantilla.
+## Facultad de Ingeniería y Tecnologías
 
-## Convenciones
+### Programación II
 
-[Convenciones de código en C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+# Plantilla de ejercicios
 
-[Convenciones de nombres en C#](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines)
+## Descripción
 
-## Dónde encontrar información sobre los errores/avisos al compilar
+Esta plantilla proporciona una estructura base para los ejercicios de
+Programación II. Incluye la configuración necesaria para desarrollar
+aplicaciones en C# con buenas prácticas de programación, pruebas automatizadas y
+documentación.
 
-[C# Compiler Errors (CS*)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/)
+La configuración es análoga a la de la [plantilla de
+proyectos](https://github.com/ucudal/PII_ProjectTemplate).
 
-[Roslyn Analyzer Warnings (CA*)](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/categories)
+La plantilla está pensada para ser utilizada como base de los ejercicios de
+Programación II. Cuando creamos un nuevo ejercicio, usamos esta plantilla como
+punto de partida. Para los ejercicios existentes, podemos usar extensiones de
+Visual Studio Code como [Compare
+Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders)
+o [Diff
+Folders](https://marketplace.visualstudio.com/items?itemName=L13RARY.l13-diff),
+o herramientas como [Beyond Compare](https://www.scootersoftware.com), para
+pasar la configuración de esta plantilla al ejercicio existente.
 
-[StyleCop Analyzer Warnings (SA*)](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/DOCUMENTATION.md)
+## Estructura
 
-# Cómo deshabilitar temporalmente los avisos al compilar
+Los archivos README.md de los ejercicios **deben** incluir:
 
-## Roslyn Analyzer
+* El o los temas involucrados en el ejercicio; idealmente con vínculos al
+  teórico correspondientes.
 
-Comentar las siguientes líneas en los archivos de proyecto (`*.csproj`)
-```
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
-    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
-    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-```
+* La consigna, dividida en partes, de lo que se espera que los estudiantes
+  hagan.
 
-## StyleCop Analyzer
+* Una rúbrica que evaluación que sirva tanto para guiar a los estudiantes en la
+  resolución del ejercicio como a los profesores para la corrección.
 
-Comentar la línea `<PackageReference Include="StyleCop.Analyzers" Version="1.1.118"/>` en los archivos de proyecto (`*.csproj`)
+## Uso de ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000?logo=githubcopilot&logoColor=fff)
+
+La plantilla está configurada para usar GitHub Copilot, tanto por los profesores
+como por los estudiantes.
+
+La configuración para controlar el comportamiento de lo que puede o no hacer
+Copilot, y de los aspectos genéricos relacionados con el curso, está en el
+archivo [`copilot-instructions.md`](/.github/copilot-instructions.md). Para
+ejercicios específicos, puede ser necesario ajustar estas instrucciones.
+
+La configuración para controlar cómo Copilot hace la revisión de los archivos
+`.csproj` está en el archivo
+[`csproj.instructions.md`](/.github/instructions/csproj.instructions.md).
+
+La configuración para controlar cómo Copilot hace la revisión de los casos de
+prueba está en el archivo
+[`tests.instructions.md`](/.github/instructions/csproj.instructions.md).
+
+El archivo
+[`README.instructions.md`](.github/instructions/README.instructions.md) tiene
+instrucciones para que Copilot asegure la consistencia y corrección de las
+consignas de ejercicios en esos archivos.
+
+> [!IMPORTANT]
+> Hay que copiar el contenido del archivo [`COPILOT.md`](./COPILOT.md) al final
+> del archivo `README.md`; ese archivo tiene las instrucciones para que los
+> estudiantes puedan usar Copilot.
+
+## Corrección automática
+
+La plantilla permite corrección automática con GitHub Copilot y el complemento
+de Visual Studio Code [Grading
+Agent](https://github.com/ucudal/GradingAgent_VSCode_Extension).
+
+> [!IMPORTANT]
+> El agente para corrección automática no está incluido en esta plantilla, sino
+> qu está disponible como parte del complemento **Grading Agent**
+> [aquí](https://github.com/ucudal/GradingAgent_VSCode_Extension/blob/main/assets/grade.agent.md).
+
+Para que el complemento **Grading Agent** funcione, el archivo README.md del
+ejercicio debe tener una rúbrica de evaluación.
+
+> [!IMPORTANT]
+> El archivo README.md **debe** incluir una rúbrica de evaluación
+> independientemente de que usemos corrección automática o no.
+<!--  -->
+> [!TIP]
+> Las rúbricas de evaluación pueden ser generadas con GitHub
+> Copilot. Hay que pasar a Copilot los objetivos de aprendizaje relacionados con
+> el ejercicio y la consigna, más un ejemplo de rúbrica como el que aparece [a continuación](#ejemplo-de-rúbrica).
+
+## Ejemplo de rúbrica
+
+A continuación, aparece un ejemplo de rúbrica de evaluación y, debajo, de
+cálculo de puntos en base a esa rúbrica.
+
+| Criterio | Ponderación | Experto | En desarrollo | Incipiente | Insuficiente |
+| --- | --- | --- | --- | --- | --- |
+| **Funcionalidad** | 40% | Cumple con la consigna correctamente y de forma consistente. | Cumple casi toda la consigna; fallos menores. | Funciona parcialmente o con errores frecuentes. | No funciona o no compila. |
+| **Aplicación de Expert** | 20% | Clases con responsabilidades claras, una sola razón de cambio; se evidencia Expert | Algunas responsabilidades bien distribuidas, otras no | Distribución confusa o acoplada | No hay diseño por responsabilidades |
+| **Aplicación de SRP** | 20% | Aplica SRP/Expert explícitamente y los justifica. | Aplica algunos criterios pero sin consistencia o explicación parcial | Aplicación débil o poco justificada | No aplica ni justifica |
+| **Diseño orientado a objetos** | 10% | Clases y colaboraciones coherentes con el dominio | Diseño razonable con algunas inconsistencias | Diseño pobre; falta claridad en relaciones | Diseño inexistente o incorrecto |
+| **Comentarios de justificación** | 5% | Todas las clases justificadas con claridad | La mayoría justificadas de forma aceptable | Pocas justificaciones o poco claras | Sin justificaciones o incorrectas |
+| **Calidad y convenciones C#** | 5% | Nombres, formato y estilo consistentes | Algunos desvíos menores | Múltiples problemas de estilo | Estilo y convenciones ignoradas |

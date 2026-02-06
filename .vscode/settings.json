@@ -2,7 +2,13 @@
     "cSpell.enabled": true,
     "cSpell.language": "en,es",
     "cSpell.words": [
-        "Doxify"
+        "Doxify",
+        "Doxyfile",
+        "github",
+        "Pseudocódigo"
     ],
-    "dotnet.defaultSolution": "ProjectTemplate.sln"
+    "dotnet.defaultSolution": "ProjectTemplate.sln",
+    "github.copilot.enable": {
+        "*": false
+    }
 }

@@ -1,0 +1,6 @@
+# EditorConfig file for test projects
+root = false
+
+# Test files - ignore underscores in method names (CA1707)
+[*.cs]
+dotnet_diagnostic.CA1707.severity = none
