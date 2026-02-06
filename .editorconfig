@@ -1,4 +1,5 @@
 is_global = true
+root = true
 
 ; [*.cs]
 

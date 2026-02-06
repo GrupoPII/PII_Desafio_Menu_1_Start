@@ -9,7 +9,7 @@ using System;
 namespace Ucu.Poo.Exercise
 {
     /// <summary>
-    /// Programa de consola de demostración.
+    /// Programa principal.
     /// </summary>
     public static class Program
     {
