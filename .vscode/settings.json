@@ -11,8 +11,10 @@
         "LINQ",
         "Liskov",
         "msbuild",
+        "nunit",
+        "preconfiguradas",
         "Pseudocódigo",
-        "stylecop"
+        "stylecop",
     ],
     "dotnet.defaultSolution": "ProjectTemplate.sln",
     "github.copilot.enable": {

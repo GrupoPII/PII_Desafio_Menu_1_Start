@@ -2,7 +2,6 @@ is_global = true
 root = true
 
 ; [*.cs]
-
 dotnet_diagnostic.IDE0090.severity = none
 dotnet_diagnostic.CA1024.severity = none
 dotnet_diagnostic.CA1303.severity = none
