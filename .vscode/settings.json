@@ -11,7 +11,8 @@
         "LINQ",
         "Liskov",
         "msbuild",
-        "Pseudocódigo"
+        "Pseudocódigo",
+        "stylecop"
     ],
     "dotnet.defaultSolution": "ProjectTemplate.sln",
     "github.copilot.enable": {

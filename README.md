@@ -1,13 +1,10 @@
-<!-- markdownlint-disable MD033 MD041 -->
+<!-- markdownlint-disable-next-line MD033 MD041 -->
 <img alt="UCU" src="https://www.ucu.edu.uy/plantillas/images/logo_ucu.svg"
 width="150"/>
-<!-- markdownlint-enable MD033 MD041 -->
 
 # Universidad Católica del Uruguay
 
-## Facultad de Ingeniería y Tecnologías
-
-### Programación II
+## Programación II
 
 # Plantilla de ejercicios
 
@@ -36,7 +33,7 @@ pasar la configuración de esta plantilla al ejercicio existente.
 Los archivos README.md de los ejercicios **deben** incluir:
 
 * El o los temas involucrados en el ejercicio; idealmente con vínculos al
-  teórico correspondientes.
+  teórico correspondiente.
 
 * La consigna, dividida en partes, de lo que se espera que los estudiantes
   hagan.
@@ -91,9 +88,10 @@ ejercicio debe tener una rúbrica de evaluación.
 > independientemente de que usemos corrección automática o no.
 <!--  -->
 > [!TIP]
-> Las rúbricas de evaluación pueden ser generadas con GitHub
-> Copilot. Hay que pasar a Copilot los objetivos de aprendizaje relacionados con
-> el ejercicio y la consigna, más un ejemplo de rúbrica como el que aparece [a continuación](#ejemplo-de-rúbrica).
+> Las rúbricas de evaluación pueden ser generadas con GitHub Copilot. Hay que
+> pasar a Copilot los objetivos de aprendizaje relacionados con el ejercicio y
+> la consigna, más un ejemplo de rúbrica como el que aparece [a
+> continuación](#ejemplo-de-rúbrica).
 
 ## Ejemplo de rúbrica
 
