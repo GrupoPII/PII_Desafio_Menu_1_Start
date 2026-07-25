@@ -21,8 +21,22 @@ git remote -v
 
 Este repositorio será upstream y el otro repositorio será origin.
 
-Usar GitHub Desktop y seleccionar la rama main para comparar con la rama
-upstream/main y sincronizar los cambios.
+En general las historias de ambos repositorios no están relacionadas. Para
+unirlas es necesario:
+
+git checkout -b sync
+git merge upstream/main --allow-unrelated-histories
+
+Resolver conflictos. Luego:
+
+git add .
+git commit -m "Sync'd with master template"
+git checkout main
+git merge sync
+git push origin main
+
+A partir de ahí en adelante es posible usar GitHub Desktop y seleccionar la
+rama main para comparar con la rama upstream/main y sincronizar los cambios.
 
 -->
 
