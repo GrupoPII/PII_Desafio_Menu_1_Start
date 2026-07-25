@@ -1,3 +1,9 @@
+//------------------------------------------------------------------------------
+// <copyright file="WaiterTests.cs" company="Universidad Católica del Uruguay">
+//     Copyright (c) Programación II. Derechos reservados.
+// </copyright>
+//------------------------------------------------------------------------------
+
 using NUnit.Framework;
 
 namespace Ucu.Poo.Restaurant.Tests
@@ -21,7 +27,7 @@ namespace Ucu.Poo.Restaurant.Tests
             Table table = new Table(1);
             waiter.AssignTable(table);
             Dish dish = new Dish("Salad", 5.99, true);
-            table.Ocupy();
+            table.Occupy();
 
             waiter.TakeOrder(table, dish);
 

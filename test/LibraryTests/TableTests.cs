@@ -1,3 +1,9 @@
+//------------------------------------------------------------------------------
+// <copyright file="TableTests.cs" company="Universidad Católica del Uruguay">
+//     Copyright (c) Programación II. Derechos reservados.
+// </copyright>
+//------------------------------------------------------------------------------
+
 using NUnit.Framework;
 
 namespace Ucu.Poo.Restaurant.Tests
@@ -19,7 +25,7 @@ namespace Ucu.Poo.Restaurant.Tests
         {
             Table table = new Table(1);
 
-            table.Ocupy();
+            table.Occupy();
 
             Assert.That(table.IsOccupied, Is.True);
         }
@@ -36,7 +42,7 @@ namespace Ucu.Poo.Restaurant.Tests
         public void HasOrders_AfterAddOrder_ReturnsTrue()
         {
             Table table = new Table(1);
-            table.Ocupy();
+            table.Occupy();
             Dish dish = new Dish("Salad", 5.99, true);
 
             table.AddToOrder(dish);
@@ -48,7 +54,7 @@ namespace Ucu.Poo.Restaurant.Tests
         public void Free_WithOccupiedTable_SetsIsOccupiedToFalseAndEmptiesOrder()
         {
             Table table = new Table(1);
-            table.Ocupy();
+            table.Occupy();
             Dish dish = new Dish("Salad", 5.99, true);
             table.AddToOrder(dish);
 

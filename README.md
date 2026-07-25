@@ -1,11 +1,11 @@
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable-next-line MD041 -->
 <img alt="UCU" src="https://www.ucu.edu.uy/plantillas/images/logo_ucu.svg"
 width="150"/>
 
 # Universidad Católica del Uruguay
 
-## Facultad de Ingeniería y Tecnologías
-
-### Programación II
+## Programación II
 
 # Desafío menú #1: Restaurante simple
 
@@ -91,7 +91,7 @@ Representa un platillo individual en el menú del restaurante.
 > Debe ser posible crear una instancia de `Dish` e inicializar sus propiedades
 > en una sola operación.
 
-Aquí está el código provisto de la clase [`Dish`](./src/Dish.cs).
+Aquí está el código provisto de la clase [`Dish`](./src/Library/Dish.cs).
 
 ## 2. **Clase `Menu`**
 
@@ -136,9 +136,9 @@ Representa el conjunto de platillos disponibles en el restaurante.
 > apropiadas. También puedes recorrer los platillos en esa variable de instancia
 > con la estructura repetitiva condicional `foreach`.
 
-Aquí está el código provisto de la clase [`Menu`](./src/Menu.cs).
+Aquí está el código provisto de la clase [`Menu`](./src/Library/Menu.cs).
 
-## 3. **Clase [`Table`](./src/Table.cs)**
+## 3. **Clase [`Table`](./src/Library/Table.cs)**
 
 Representa una mesa en el restaurante.
 
@@ -184,11 +184,13 @@ Representa una mesa en el restaurante.
 > [!TIP]
 > El método `Clear()` de la clase `ArrayList` vacía la lista.
 
+<br>
+
 > [!IMPORTANT]
 > Debe ser posible crear una instancia de `Table` e inicializar sus propiedades
 > en una sola operación.
 
-Aquí está el código provisto de la clase [`Table`](./src/Table.cs).
+Aquí está el código provisto de la clase [`Table`](./src/Library/Table.cs).
 
 ## 4. **Clase `Waiter`**
 
@@ -234,4 +236,4 @@ Representa un mozo en el restaurante, encargado de atender mesas.
 > Debe ser posible crear una instancia de `Waiter` e inicializar sus propiedades
 > en una sola operación.
 
-Aquí está el código provisto de la clase [`Waiter`](./src/Waiter.cs).
+Aquí está el código provisto de la clase [`Waiter`](./src/Library/Waiter.cs).
