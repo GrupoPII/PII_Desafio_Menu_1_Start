@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {   "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
     "settings": {
       "documentationRules": {
@@ -10,4 +11,18 @@
       "usingDirectivesPlacement":"outsideNamespace"
     }
   }
+=======
+{   "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+      "documentationRules": {
+        "companyName": "Universidad Católica del Uruguay",
+        "copyrightText": "Copyright (c) Programación II. Derechos reservados.",
+        "headerDecoration": "-----------------------------------------------------------------------",
+        "documentationCulture": "es-MX"
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement":"outsideNamespace"
+    }
+  }
+>>>>>>> upstream/main
 }

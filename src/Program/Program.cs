@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿//------------------------------------------------------------------------------
+=======
+﻿
+>>>>>>> upstream/main
 // <copyright file="Program.cs" company="Universidad Católica del Uruguay">
 //     Copyright (c) Programación II. Derechos reservados.
 // </copyright>
@@ -6,7 +10,11 @@
 
 using System;
 
+<<<<<<< HEAD
 namespace Ucu.Poo.Restaurant
+=======
+namespace Ucu.Poo.Exercise
+>>>>>>> upstream/main
 {
     /// <summary>
     /// Programa principal.
@@ -18,6 +26,7 @@ namespace Ucu.Poo.Restaurant
         /// </summary>
         public static void Main()
         {
+<<<<<<< HEAD
             // Dish burger = new Dish("Burger", 5.99, false);
             // Dish salad = new Dish("Salad", 4.99, true);
             // Menu menu = new Menu();
@@ -34,6 +43,9 @@ namespace Ucu.Poo.Restaurant
             // oneTable.Free();
             // Console.WriteLine(
             //     $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
+=======
+            Console.WriteLine("Hello World!");
+>>>>>>> upstream/main
         }
     }
 }

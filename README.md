@@ -14,9 +14,10 @@ width="150"/>
 Completar la implementación en C# las clases indicadas a continuación, con sus
 responsabilidades y colaboraciones, también indicadas a continuación.
 
-<!-- Cada clase
-debe ser agregada por un estudiante diferente y deben trabajar en ramas
-diferentes.
+<!--
+
+Cada clase debe ser agregada por un estudiante diferente y deben trabajar en
+ramas diferentes.
 
 ## Pasos
 
@@ -50,14 +51,15 @@ por lo que deberán unir los cambios con frecuencia.
 > prueba ejecuten el comando `Run All Tests from Solution` en el menú `Tests` de
 > Rider. Deberían ver una imagen como la siguiente si todo funcionó bien:
 >
-> <img src="/assets/image.png" alt="Resultado de las pruebas" width="345" /> -->
+> <img src="/assets/image.png" alt="Resultado de las pruebas" width="345" />
+-->
 
 ## Clases a implementar
 
 A continuación la descripción de las clases, sus responsabilidades de hacer y de
 conocer, y sus colaboraciones.
 
-## 1. **Clase `Dish`**
+### 1. **Clase `Dish`**
 
 Representa un platillo individual en el menú del restaurante.
 
@@ -93,7 +95,7 @@ Representa un platillo individual en el menú del restaurante.
 
 Aquí está el código provisto de la clase [`Dish`](./src/Library/Dish.cs).
 
-## 2. **Clase `Menu`**
+### 2. **Clase `Menu`**
 
 Representa el conjunto de platillos disponibles en el restaurante.
 
@@ -138,7 +140,7 @@ Representa el conjunto de platillos disponibles en el restaurante.
 
 Aquí está el código provisto de la clase [`Menu`](./src/Library/Menu.cs).
 
-## 3. **Clase [`Table`](./src/Library/Table.cs)**
+### 3. **Clase [`Table`](./src/Library/Table.cs)**
 
 Representa una mesa en el restaurante.
 
@@ -192,7 +194,7 @@ Representa una mesa en el restaurante.
 
 Aquí está el código provisto de la clase [`Table`](./src/Library/Table.cs).
 
-## 4. **Clase `Waiter`**
+### 4. **Clase `Waiter`**
 
 Representa un mozo en el restaurante, encargado de atender mesas.
 
@@ -237,3 +239,8 @@ Representa un mozo en el restaurante, encargado de atender mesas.
 > en una sola operación.
 
 Aquí está el código provisto de la clase [`Waiter`](./src/Library/Waiter.cs).
+
+## Uso de ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000?logo=githubcopilot&logoColor=fff)
+
+Es posible usar GitHub Copilot en este repositorio. Consulta [cómo usar Copilot
+para aprender](./COPILOT.md).
