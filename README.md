@@ -45,14 +45,26 @@ por lo que deberán unir los cambios con frecuencia.
 >
 > Para compilar el código en Visual Studio Code ejecuten el comando `Run Build
 > Task...` del menú `Terminal` y elijan `dotnet: build`.
+
+<!-- Intentionally left blank -->
+
+> [!TIP]
 >
-> Aunque todavía no vamos a ver cómo hacer casos de prueba, este repositorio usa
-> casos de prueba para comprobar su solución. Para ejecutar los casos de
-> prueba usen el comando `Testing` en el menú `View` para mostrar el explorador
-> de tests y luego ejecuta los tests como apare a continuación:
+> Aunque todavía no vamos a ver cómo escribir ni ejecutar casos de prueba, este
+> repositorio usa casos de prueba para que puedan comprobar su solución.
+>
+> Los casos de prueba están comentados para que la solución compile sin errores.
+> Quita los comentarios que hay en
+> [DishTests.cs](./test/LibraryTests/DishTests.cs),
+> [MenuTests.cs](./test/LibraryTests/MenuTests.cs),
+> [TableTests.cs](./test/LibraryTests/TableTests.cs) y
+> [WaiterTests.cs](./test/LibraryTests/WaiterTests.cs).
+>
+> Una vez que ya no haya errores de compilación, ejecuta los casos de
+> prueba usando el comando `Testing`  del menú `View` para mostrar el explorador
+> de tests, y luego, haz como aparece a continuación:
 >
 > ![](/assets/RunTests.gif)
-
 
 ## Clases a implementar
 
