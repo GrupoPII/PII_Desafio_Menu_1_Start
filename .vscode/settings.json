@@ -18,6 +18,9 @@
         "stylecop",
         "ucudal"
     ],
+    "cSpell.ignorePaths": [
+        "/.gitignore",
+    ],
     "dotnet.defaultSolution": "Restaurant.sln",
     "github.copilot.enable": {
         "*": false
