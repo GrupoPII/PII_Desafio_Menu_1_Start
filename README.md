@@ -39,20 +39,20 @@ implementa una clase diferente.
 
 6. El código no va a funcionar hasta que integren el trabajo en la rama `main`,
 por lo que deberán unir los cambios con frecuencia.
+-->
 
 > [!IMPORTANT]
-> Para compilar el código en Rider usen el comando `Build Solution` del menú
-> `Build`.
 >
-> También pueden ejecutar el comando `dotnet test` en la consola.
+> Para compilar el código en Visual Studio Code ejecuten el comando `Run Build
+> Task...` del menú `Terminal` y elijan `dotnet: build`.
 >
 > Aunque todavía no vamos a ver cómo hacer casos de prueba, este repositorio usa
-> casos de prueba para comprobar la implementación. Para ejecutar los casos de
-> prueba ejecuten el comando `Run All Tests from Solution` en el menú `Tests` de
-> Rider. Deberían ver una imagen como la siguiente si todo funcionó bien:
+> casos de prueba para comprobar su solución. Para ejecutar los casos de
+> prueba usen el comando `Testing` en el menú `View` para mostrar el explorador
+> de tests y luego ejecuta los tests como apare a continuación:
 >
-> <img src="/assets/image.png" alt="Resultado de las pruebas" width="345" />
--->
+> ![](/assets/RunTests.gif)
+
 
 ## Clases a implementar
 
