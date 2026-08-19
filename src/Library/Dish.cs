@@ -27,11 +27,11 @@ namespace Ucu.Poo.Restaurant
                 }
             }
         }
-        private int price;
+        private double price;
         /// <summary>
         /// Obtiene o establece el precio del plato.
         /// </summary>
-        public int Price
+        public double Price
         {
             get{return price;}
             set{price = value;}
@@ -51,7 +51,7 @@ namespace Ucu.Poo.Restaurant
         /// <param name="name">Nombre del plato.</param>
         /// <param name="price">Precio del plato.</param>
         /// <param name="isVegetarian">Indica si el plato es vegetariano.</param>
-        public Dish(string name, int price, bool isVegetarian)
+        public Dish(string name, double price, bool isVegetarian)
         {
             this.Name = name;
             this.Price= price;
