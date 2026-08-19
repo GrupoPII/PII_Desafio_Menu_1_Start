@@ -30,7 +30,7 @@ namespace Ucu.Poo.Restaurant
             waiter.TakeOrder(oneTable, burger);
             Console.WriteLine(
             $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied} " +
-            "y la atiende: {waiter.Name}");
+            $"y la atiende: {waiter.Name}");
             oneTable.Free();
             Console.WriteLine(
             $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
