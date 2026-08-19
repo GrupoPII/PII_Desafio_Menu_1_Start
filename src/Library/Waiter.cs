@@ -1,9 +1,6 @@
-//------------------------------------------------------------------------------
-// <copyright file="Waiter.cs" company="Universidad Católica del Uruguay">
-//     Copyright (c) Programación II. Derechos reservados.
-// </copyright>
-//------------------------------------------------------------------------------
 
+
+using System;
 using System.Collections;
 
 namespace Ucu.Poo.Restaurant
@@ -13,6 +10,21 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Waiter
     {
+        public String name;
+        public String Name
+        {
+            get{ return name; } set {name=value;}
+        }
         private ArrayList assignedTables = new ArrayList();
+        public ArrayList AssignedTables
+        {
+            get {return assignedTables;} set {assignedTables =value;}
+        }
+        public Waiter(String name, ArrayList assignedTables)
+        {
+            this.Name=name;
+            this.AssignedTables=assignedTables;
+        }
+
     }
 }
