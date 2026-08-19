@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -23,11 +24,10 @@ namespace Ucu.Poo.Restaurant
         public Waiter(String name, ArrayList assignedTables)
         {
             this.Name=name;
-            this.AssignedTables=assignedTables;
         }
-        public void AssignTable(Table Table)
+        public void AssignTable(Table table)
         {
-            
+        assignedTables.Add(table);
         }
 
     }
