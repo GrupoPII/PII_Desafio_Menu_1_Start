@@ -42,5 +42,11 @@ namespace Ucu.Poo.Restaurant
             get {return isvegetarian;}
             set {isvegetarian=value;}
         }
+        public Dish(string name, string price, bool isvegetarian)
+        {
+            this.Name = name;
+            this.Price= price;
+            this.IsVegetarian= isvegetarian;
+        }
     }
 }
