@@ -40,7 +40,7 @@ namespace Ucu.Poo.Restaurant
         public bool IsVegetarian
         {
             get {return isvegetarian;}
-            set {isvegetarian=value}
+            set {isvegetarian=value;}
         }
     }
 }
