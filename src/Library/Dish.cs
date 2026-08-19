@@ -24,17 +24,11 @@ namespace Ucu.Poo.Restaurant
                 }
             }
         }
-        private string price;
-        public string Price
+        private int price;
+        public int  Price
         {
             get{return price;}
-            set
-            {
-                if (!string.IsNullOrEmpty(value))
-                {
-                    price = value;
-                }
-            }
+            set{price = value;}
         }
         private bool isvegetarian;
         public bool IsVegetarian
