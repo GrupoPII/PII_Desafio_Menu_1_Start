@@ -21,13 +21,17 @@ namespace Ucu.Poo.Restaurant
         {
             get {return assignedTables;} set {assignedTables =value;}
         }
-        public Waiter(String name, ArrayList assignedTables)
+        public Waiter(String name)
         {
             this.Name=name;
         }
         public void AssignTable(Table table)
         {
         assignedTables.Add(table);
+        }
+        public void TakeOrder(Table table, Dish dish)
+        {
+           table.AddToOrder(dish);
         }
 
     }
