@@ -13,11 +13,35 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Table
     {
-        private ArrayList order = new ArrayList();
 
+        private ArrayList order = new ArrayList();
+        public int Number { get; }
+    public bool IsOccupied {get; private set;} 
+    public ArrayList Order
+        {
+            get {return this.order;}
+        }
+        public Table(int number)
+        {
+            this.Number = number;
+            this.IsOccupied=false; 
+        }
+        public void Occupy()
+        {
+            this.IsOccupied=true;
+        }
+        public void Free()
+        {
+            this.IsOccupied=false;
+            this.order.Clear();
+        }
+        public void AddToOrder(Dish dish)
+        {
+            this.order.Add(dish);
+        }
         public bool HasOrders()
         {
             return this.order.Count > 0;
         }
     }
-}
+} 
