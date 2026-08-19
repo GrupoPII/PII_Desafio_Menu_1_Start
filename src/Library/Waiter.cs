@@ -25,6 +25,10 @@ namespace Ucu.Poo.Restaurant
             this.Name=name;
             this.AssignedTables=assignedTables;
         }
+        public void AssignTable(Table Table)
+        {
+            
+        }
 
     }
 }
