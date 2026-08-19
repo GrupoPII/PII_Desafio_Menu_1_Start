@@ -36,6 +36,8 @@ namespace Ucu.Poo.Restaurant
             $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
             Console.WriteLine(
             $"La ensalada tiene los atributos: {salad.Name}, {salad.Price} y es vegetariana = {salad.IsVegetarian}");
+            Console.WriteLine(
+            $"La hamburguesa tiene los atributos: {burger.Name}, {burger.Price} y es vegetariana = {burger.IsVegetarian}");
         }
     }
 }
