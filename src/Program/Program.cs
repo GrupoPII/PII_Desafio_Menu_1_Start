@@ -38,6 +38,17 @@ namespace Ucu.Poo.Restaurant
             $"La ensalada tiene los atributos: {salad.Name}, {salad.Price} y es vegetariana = {salad.IsVegetarian}");
             Console.WriteLine(
             $"La hamburguesa tiene los atributos: {burger.Name}, {burger.Price} y es vegetariana = {burger.IsVegetarian}");
+            Table threeTable = new Table(3);
+            waiter.AssignTable(threeTable);
+            threeTable.Occupy();
+            waiter.TakeOrder(threeTable, burger);
+            waiter.TakeOrder(threeTable, burger);
+            waiter.TakeOrder(threeTable, burger);
+            waiter.TakeOrder(threeTable, salad);
+            Console.WriteLine(
+            $"La mesa {threeTable.Number} está ocupada: {threeTable.IsOccupied} " +
+            $"y la atiende: {waiter.Name}");
+            Console.WriteLine($"El total de la mesa es: {waiter.GetTotal(threeTable)}");
         }
     }
 }
