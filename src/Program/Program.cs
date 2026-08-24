@@ -39,9 +39,9 @@ namespace Ucu.Poo.Restaurant
             $"La ensalada tiene los atributos: {salad.Name}, {salad.Price} y es vegetariana = {salad.IsVegetarian}");
             Console.WriteLine(
             $"La hamburguesa tiene los atributos: {burger.Name}, {burger.Price} y es vegetariana = {burger.IsVegetarian}");
-            TakeOver takeOver1=new TakeOver();
-            takeOver1.AddToOrder(burger);
-            Console.WriteLine(takeOver1.GetTotal());
+            TakeOrder takeOrder1=new TakeOver();
+            takeOrder1.AddToOrder(burger);
+            Console.WriteLine(takeOrder1.GetTotal());
         }
     }
 }

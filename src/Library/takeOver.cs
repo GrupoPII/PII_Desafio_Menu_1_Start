@@ -1,7 +1,7 @@
 using System.Collections;
 
 namespace Ucu.Poo.Restaurant
-{    public class TakeOver
+{    public class TakeOrder
     {
 
         private ArrayList order = new ArrayList();
