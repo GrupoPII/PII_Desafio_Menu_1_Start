@@ -5,6 +5,7 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.Collections;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -49,6 +50,9 @@ namespace Ucu.Poo.Restaurant
             $"La mesa {threeTable.Number} está ocupada: {threeTable.IsOccupied} " +
             $"y la atiende: {waiter.Name}");
             Console.WriteLine($"El total de la mesa es: {waiter.GetTotal(threeTable)}");
+            TakeOver takeOver1=new TakeOver();
+            takeOver1.AddToOrder(burger);
+            Console.WriteLine(takeOver1.GetTotal());
         }
     }
 }
