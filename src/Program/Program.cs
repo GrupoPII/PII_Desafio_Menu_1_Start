@@ -49,7 +49,7 @@ namespace Ucu.Poo.Restaurant
             Console.WriteLine(
             $"La mesa {threeTable.Number} está ocupada: {threeTable.IsOccupied} " +
             $"y la atiende: {waiter.Name}");
-            Console.WriteLine($"El total de la mesa es: {waiter.GetTotal(threeTable)}");
+            Console.WriteLine($"El total de la mesa es: {threeTable.GetTotal(threeTable)}");
             TakeOver takeOver1=new TakeOver();
             takeOver1.AddToOrder(burger);
             Console.WriteLine($"El total del pedido es: {takeOver1.GetTotal()}");
