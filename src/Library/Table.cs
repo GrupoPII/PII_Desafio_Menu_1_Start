@@ -5,6 +5,7 @@
 //------------------------------------------------------------------------------
 
 using System.Collections;
+using System.Collections.Concurrent;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -76,6 +77,20 @@ namespace Ucu.Poo.Restaurant
         public bool HasOrders()
         {
             return this.order.Count > 0;
+        }
+        /// <summary>
+        /// Obtiene el total de la orden de la mesa.
+        /// </summary>
+        /// <param name="order">Mesa cuya orden se desea calcular.</param>
+        /// <returns>El total de la orden.</returns>
+        public double GetTotal(Table order )
+        {
+            double total = 0;
+            foreach (Dish dish in order.Order)
+            {
+                total += dish.Price;
+            }
+            return total;
         }
     }
 } 
