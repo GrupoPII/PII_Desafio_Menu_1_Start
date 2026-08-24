@@ -65,11 +65,6 @@ namespace Ucu.Poo.Restaurant
         /// Agrega un platillo a la orden de la mesa.
         /// </summary>
         /// <param name="dish">Platillo a agregar.</param>
-        public void AddToOrder(Dish dish)
-        {
-            this.order.Add(dish);
-        }
-
         /// <summary>
         /// Verifica si la mesa tiene algún platillo en la orden.
         /// </summary>
@@ -83,14 +78,6 @@ namespace Ucu.Poo.Restaurant
         /// </summary>
         /// <param name="order">Mesa cuya orden se desea calcular.</param>
         /// <returns>El total de la orden.</returns>
-        public double GetTotal(Table order )
-        {
-            double total = 0;
-            foreach (Dish dish in order.Order)
-            {
-                total += dish.Price;
-            }
-            return total;
-        }
+       
     }
 } 

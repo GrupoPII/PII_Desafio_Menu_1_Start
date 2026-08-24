@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 
 namespace Ucu.Poo.Restaurant
@@ -9,18 +10,10 @@ namespace Ucu.Poo.Restaurant
         {
             get { return this.order; }
         }
-        public void AddToOrder(Dish dish)
+        private String name;
+        public String Name
         {
-            this.order.Add(dish);
-        }
-        public double GetTotal()
-        {
-            double total=0;
-            foreach(Dish dish in order)
-            {
-                total+=dish.Price;
-            }
-          return total;  
+            get{return this.name;}
         }
     }
 } 
