@@ -13,7 +13,7 @@ namespace Ucu.Poo.Restaurant
         {
             this.order.Add(dish);
         }
-        public double GetTotal(ArrayList order)
+        public double GetTotal()
         {
             double total=0;
             foreach(Dish dish in order)
