@@ -52,7 +52,7 @@ namespace Ucu.Poo.Restaurant
             Console.WriteLine($"El total de la mesa es: {waiter.GetTotal(threeTable)}");
             TakeOver takeOver1=new TakeOver();
             takeOver1.AddToOrder(burger);
-            Console.WriteLine(takeOver1.GetTotal());
+            Console.WriteLine($"El total del pedido es: {takeOver1.GetTotal()}");
         }
     }
 }
