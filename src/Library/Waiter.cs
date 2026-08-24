@@ -3,6 +3,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -56,6 +57,19 @@ namespace Ucu.Poo.Restaurant
         {
            table.Order.Add(dish);
         }
-
+        /// <summary>
+        /// Calcula el total del pedido de una mesa.
+        /// </summary>
+        /// <param name="table">Mesa cuyo pedido se totalizará.</param>
+        /// <returns>El total del pedido.</returns>
+        public double GetTotal(Table table)
+        {
+            double total = 0;
+            foreach (Dish dish in table.Order)
+            {
+                total += dish.Price;
+            }
+            return total;
+        }
     }
 }
